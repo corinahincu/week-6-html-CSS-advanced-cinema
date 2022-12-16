@@ -23,12 +23,32 @@
       display: inline-block;
       vertical-align: top;
     }
+    .spectator-male::before {
+      content: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png);
+      /*background-image: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png);*/
+      display: inline-block;
+      position: absolute;
+      transform: translateX(-20px) translateY(17px);
+      
+    }
     .cinema .main span {
       background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
       width: 72px;
       height: 72px;
       display: inline-block;
       vertical-align: top;
+    }
+    .split-right {
+      margin-right: 36px;
+    }
+    .split-left {
+      margin-left: 36px;
+    }
+    .spectator-female::before {
+      content: url(https://icons.iconarchive.com/icons/aha-soft/free-large-boss/48/Caucasian-Female-Boss-icon.png);
+      position: absolute;
+      display: inline-block;
+      transform: translateX(-20px) translateY(17px) ;
     }
     .cinema .front span {
       background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
@@ -47,19 +67,19 @@
     <div class="vip">
       <h2>VIP</h2>
       <div class="row">
-        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7 <br> <img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png" /> </span>
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span class="spectator-male">7 <!-- <br> <img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png"/> -->  </span>
       </div>
     </div>
     <div class="main">
       <h2>MAIN</h2>
       <div class="row">
-        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+        <span>1</span><span>2</span><span>3</span><span class="split-right">4</span><span class="split-left">5</span><span>6</span><span>7</span><span>8</span>
       </div>
       <div class="row">
-        <span>1</span><span>2</span><span>3</span><span>4</span><span>5 <br> <img src="https://icons.iconarchive.com/icons/aha-soft/free-large-boss/48/Caucasian-Female-Boss-icon.png"></span><span>6</span><span>7</span><span>8</span>
+        <span>1</span><span>2</span><span>3</span><span class="split-right">4</span><span  class="split-left spectator-female" > 5 <!-- <br> <img src="https://icons.iconarchive.com/icons/aha-soft/free-large-boss/48/Caucasian-Female-Boss-icon.png"> --> </span><span>6</span><span>7</span><span>8</span>
       </div>
       <div class="row">
-        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+        <span>1</span><span>2</span><span>3</span><span class="split-right">4</span><span class="split-left">5</span><span>6</span><span>7</span><span>8</span>
       </div>
 
     </div>
